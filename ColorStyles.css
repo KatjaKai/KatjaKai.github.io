@@ -68,4 +68,12 @@ position: fixed;
 bottom: 0;
 width: 100%;
 }
+@media (max-width: 600px)
+{
+	section
+	{
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
 
