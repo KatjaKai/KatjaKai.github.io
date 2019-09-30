@@ -1,3 +1,7 @@
+*
+{
+	box-sizing: border-box;
+}
 body
 {
 font-family: 'Raleway', serif;
@@ -33,35 +37,35 @@ section
 	display: -webkit-flex;
 	display: flex;
 }
-.navbar
+navbar
 {
-	-webkit-flex: 2;
-	-ms-flex: 2;
-	flex: 2;
-background-color: gray;
-overflow: hidden;
-position: fixed;
-bottom: 0;
-width: 100%
-transition: top 0.3s;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+background-color: white;
+width: 100%;
+height: 100%;
+padding: 40px;
 }
 canvas
 {
 border: 2px solid black;
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
 }
 
 
 img
 {
-	-webkit-flex: 3;
-	-ms-flex: 3;
-	flex: 3;
 width: 300px;
+border: 10px solid white;
+border-radius: 30px;
 }
 footer
 {
 background-color: #666;
-padding: 10px;
+padding: 2px;
 text-align: center;
 color: white;
 position: fixed;
