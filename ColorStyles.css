@@ -28,12 +28,34 @@ font-family: 'Raleway', serif;
 font-size: 16px;
 margin-left: 30px;
 }
+section
+{
+	display: -webkit-flex;
+	display: flex;
+}
+.navbar
+{
+	-webkit-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+background-color: gray;
+overflow: hidden;
+position: fixed;
+bottom: 0;
+width: 100%
+transition: top 0.3s;
+}
 canvas
 {
 border: 2px solid black;
 }
+
+
 img
 {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
 width: 300px;
 }
 footer
@@ -47,12 +69,3 @@ bottom: 0;
 width: 100%;
 }
 
-.navbar
-{
-background-color: gray;
-overflow: hidden;
-position: fixed;
-bottom: 0;
-width: 100%
-transition: top 0.3s;
-}
