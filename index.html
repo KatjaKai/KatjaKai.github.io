@@ -23,6 +23,24 @@ function drag(event)
 event.dataTransfer.setData("text", event.target.id);
 }
 
+<!-- modal -->
+var modal = document.getElementById("myModal");
+
+var img = document.getElementByClassName("myImages");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function()
+{
+modal.style.display = "block";
+modalImg.src = this.src;
+captionText.innerHTML = this.alt;
+}
+var span = document.getElementByClassName("close")[0];
+
+span.onclick = function()
+{
+modal-style.display = "none";
+}
 </script>
 
   </head>
@@ -50,34 +68,30 @@ event.dataTransfer.setData("text", event.target.id);
 
 
 <!-- first line of images-->
-<div style="margin-bottom: 100px; margin-right: 100px">
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<div id="div1" ondragover="permitdrop(event)" ondrop="drop(event)" style="margin-bottom: 100px; margin-right: 100px">
+
+<img class="myImages" src="dragonslayer.jpg" id="dragon" Alt="dragon" draggable="true" ondragstart="drag(event)"/>
 <img src="Vikings_DrinkingTea.png" id="Vikings" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
-<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="Viking01.png" id="viking01" draggable="true" ondragstart="drag(event)"/>
+<img src="Viking02.png" id="viking02" draggable="true" ondragstart="drag(event)"/>
+<img src="Viking03.png" id="viking03" draggable="true" ondragstart="drag(event)"/>
+<img src="Viking04.png" id="viking04" draggable="true" ondragstart="drag(event)"/>
+<img src="Viking05.png" id="viking05" draggable="true" ondragstart="drag(event)"/>
+<img src="Viking06.png" id="viking06" draggable="true" ondragstart="drag(event)"/>
+<img src="Viking07.png" id="viking07" draggable="true" ondragstart="drag(event)"/>
+<img src="Viking08.png" id="viking08" draggable="true" ondragstart="drag(event)"/>
+
 </div>
 
-<div ondragover="permitdrop(event)" ondrop="drop(event)" style="background-color: #999; width:800px; height:1200px">
-<h4><b>Collect your favorites!</h4></b>
+<div id="myModal" class="modal">
+<span class="close">&times;</span>
+<img class="modal-content" id="img01">
+<div id="caption"></div>
 </div>
-<!-- second line -->
 
+<div id="div2" ondragover="permitdrop(event)" ondrop="drop(event)" style="width:50%; height:100%">
+<h4><b>Drag your favorite here!</h4></b>
+</div>
 </section>
 
 <footer>
