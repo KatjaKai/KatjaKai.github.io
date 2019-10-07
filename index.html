@@ -7,7 +7,23 @@
 
 			<link rel="stylesheet" type="text/css" href="ColorStyles.css">
 			
+<script>
+function drop(event)
+{
+event.preventDefault();
+var data=event.dataTransfer.getData("text");
+event.target.appendChild(document.getElementById(data));
+}
+function permitdrop(event)
+{
+event.preventDefault();
+}
+function drag(event)
+{
+event.dataTransfer.setData("text", event.target.id);
+}
 
+</script>
 
   </head>
   
@@ -35,24 +51,30 @@
 
 <!-- first line of images-->
 <div style="margin-bottom: 100px; margin-right: 100px">
-<img src="dragonslayer.jpg" draggable="true">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
-<img src="dragonslayer.jpg">
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="Vikings_DrinkingTea.png" id="Vikings" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+<img src="dragonslayer.jpg" id="dragon" draggable="true" ondragstart="drag(event)"/>
+</div>
+
+<div ondragover="permitdrop(event)" ondrop="drop(event)" style="background-color: #999; width:800px; height:1200px">
+<h4><b>Collect your favorites!</h4></b>
 </div>
 <!-- second line -->
 
