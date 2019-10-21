@@ -37,18 +37,17 @@ event.dataTransfer.setData("text", event.target.id);
  </style>
  <header>
 <!-- introduction-->
-<h1>Portfolio</h1>
+<h1>Mockup portfolio</h1>
 <h2>Katja Kaikkonen & Konsta Kantoluoto</h2>
 
 
 </header>
 <hr/>
-
 <section>
 
 <!-- Navigation bar -->
 <div>
-<table border="2" cellpadding="20">
+<table border="2" cellpadding="20" style="background-color: white">
 <navbar>
 <tr><td><a href="index.html">Home</a></td></tr>
 <tr><td><a href="bio.html">Bio</a></td></br></tr>
@@ -56,6 +55,7 @@ event.dataTransfer.setData("text", event.target.id);
 </navbar>
 </table>
 </div>
+
 <!-- Images-->
 <div id="div1" ondragover="permitdrop(event)" ondrop="drop(event)" style="margin-bottom: 100px; margin-right: 100px; background-color: white">
 
@@ -69,16 +69,16 @@ event.dataTransfer.setData("text", event.target.id);
 <img src="Viking06.png" id="viking06" draggable="true" ondragstart="drag(event)"/>
 <img src="Viking07.png" id="viking07" draggable="true" ondragstart="drag(event)"/>
 <img src="Viking08.png" id="viking08" draggable="true" ondragstart="drag(event)"/>
-
 </div>
 
+<!-- Drag and drop box -->
 <div id="div2" ondragover="permitdrop(event)" ondrop="drop(event)" style="width:50%; height:100%; background-color: white">
 <h4><b>Drag your favorite here!</h4></b>
 </div>
 </section>
 
 <footer>
-<h3>Here's footer text</h3>
+<h3>2019©</h3>
 </footer>
 
 </body>
