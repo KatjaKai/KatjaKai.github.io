@@ -70,6 +70,13 @@ article
 	-ms-flex: 3;
 	flex: 3;
 }
+li
+{
+	margin-left: 300px;
+		-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+}
 navbar
 {
 	-webkit-flex: 1;
