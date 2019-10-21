@@ -8,6 +8,7 @@
 			<link rel="stylesheet" type="text/css" href="ColorStyles.css">
 			
 <script>
+<!-- Drag & drop -->
 function drop(event)
 {
 event.preventDefault();
@@ -23,7 +24,7 @@ function drag(event)
 event.dataTransfer.setData("text", event.target.id);
 }
 
-<!-- modal -->
+<!-- image modal -->
 var modal = document.getElementById("myModal");
 
 var img = document.getElementByClassName("myImages");
@@ -49,25 +50,24 @@ modal-style.display = "none";
  <header>
 <!-- introduction-->
 <h1>Portfolio</h1>
-<h2>Full name comes here</h2>
+<h2>Katja Kaikkonen & Konsta Kantoluoto</h2>
 
-
-<!-- navigation bar-->
 
 </header>
 <hr/>
 
 <section>
 
-
+<!-- Navigation bar -->
+<table border="2">
 <navbar>
-<td><a href="index.html">Home</a></td></br>
-<td><a href="bio.html">Bio</a></td></br>
+<tr><td><a href="index.html">Home</a></td></tr>
+<tr><td><a href="bio.html">Bio</a></td></br></tr>
 <td><a href="contact.html">Contact</a></td>
 </navbar>
+</table>
 
-
-<!-- first line of images-->
+<!-- Images-->
 <div id="div1" ondragover="permitdrop(event)" ondrop="drop(event)" style="margin-bottom: 100px; margin-right: 100px">
 
 <img class="myImages" src="dragonslayer.jpg" id="dragon" Alt="dragon" draggable="true" ondragstart="drag(event)"/>
@@ -97,13 +97,6 @@ modal-style.display = "none";
 <footer>
 <h3>Here's footer text</h3>
 </footer>
-
-<!--
-<div class="navbar">
-<h3>Here's text and something</h3>
-</div>
--->
-
 
 </body>
 </html>
