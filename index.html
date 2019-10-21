@@ -24,24 +24,6 @@ function drag(event)
 event.dataTransfer.setData("text", event.target.id);
 }
 
-<!-- image modal -->
-var modal = document.getElementById("myModal");
-
-var img = document.getElementByClassName("myImages");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function()
-{
-modal.style.display = "block";
-modalImg.src = this.src;
-captionText.innerHTML = this.alt;
-}
-var span = document.getElementByClassName("close")[0];
-
-span.onclick = function()
-{
-modal-style.display = "none";
-}
 </script>
 
   </head>
@@ -82,12 +64,6 @@ modal-style.display = "none";
 <img src="Viking07.png" id="viking07" draggable="true" ondragstart="drag(event)"/>
 <img src="Viking08.png" id="viking08" draggable="true" ondragstart="drag(event)"/>
 
-</div>
-
-<div id="myModal" class="modal">
-<span class="close">&times;</span>
-<img class="modal-content" id="img01">
-<div id="caption"></div>
 </div>
 
 <div id="div2" ondragover="permitdrop(event)" ondrop="drop(event)" style="width:50%; height:100%">
