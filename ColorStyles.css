@@ -65,7 +65,7 @@ section
 	display: flex;
 }
 article
-{	margin-left: 300px;
+{	margin-left: 100px;
 		-webkit-flex: 3;
 	-ms-flex: 3;
 	flex: 3;
